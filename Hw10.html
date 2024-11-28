@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3 {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box div > p {
+    color: red;
+}
+
+p.yellow {
+    color: yellow;
+}
+
+.text-box > p:nth-of-type(4) {
+    color: rgb(255, 250, 103);
+}
+
+
+
+.monday {
+    color: rgb(255, 0, 0);
+}
+
+.tuesday {
+    color: rgb(255, 200, 2);
+}
+
+.wednesday {
+    color: rgb(238, 255, 0);
+}
+
+.thursday {
+    color: rgb(30, 255, 0);
+}
+
+.friday {
+    color: rgb(94, 0, 128);
+}
+
+tr:hover {
+    text-decoration: underline;
+}
+
+tr:active {
+    font-weight: bold;
+}
+
+tr:focus {
+    outline: 2px solid black;
+}
+
+tr:disabled {
+    opacity: 0.5;
+}
+
+
+tr:first-child {
+    font-style: italic;
+}
+
+tr:last-child {
+    text-transform: uppercase;
+}
+
+tr:nth-child(2) {
+    color: teal;
+}
+
+tr:nth-of-type(odd) {
+    background-color: lightgrey;
+}
+
+tr:nth-of-type(even) {
+    background-color: rgb(255, 253, 253);
+}
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
+        <div>Даний елемент має залишитись неоформленим.</div>
+        <div><p>Пофарбуйте мене в червоний колір (color:red).</p></div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p>Пофарбуйте мене в зелений колір (color:green).</p>
+        <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
+      </div>
+
+    <div class="schedule">
+      <h2>Розклад уроків</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Час</th>
+                  <th>Понеділок</th>
+                  <th>Вівторок</th>
+                  <th>Середа</th>
+                  <th>Четвер</th>
+                  <th>П'ятниця</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="monday">
+                  <td>7:45-12:40</td>
+                  <td>Музика</td>
+                  <td>Німецька</td>
+                  <td>Англійська</td>
+                  <td>Физика</td>
+                  <td>Історія</td>
+                  <td>Історія</td>
+              </tr>
+              <tr class="tuesday">
+                  <td>7:45-12:40</td>
+                  <td>Етіка</td>
+                  <td>Етіка</td>
+                  <td>Німецька</td>
+                  <td>Німецька</td>
+                  <td>Іскуство</td>
+                  <td>Французька</td>
+              </tr>
+              <tr class="wednesday">
+                  <td>7:45-14:00</td>
+                  <td>Фізкультура</td>
+                  <td>Фізкультура</td>
+                  <td>Математика</td>
+                  <td>Економіка</td>
+                  <td>Економіка</td>
+                  <td>Французька</td>
+                  <td>Матиматика</td>
+              </tr>
+              <tr class="thursday">
+                  <td>7:45-12:40</td>
+                  <td>Економіка</td>
+                  <td>Біологія</td>
+                  <td>Біологія</td>
+                  <td>Англійська</td>
+                  <td>Матиматика</td>
+                  <td>Фізика</td>
+              </tr>
+              <tr class="friday">
+                  <td>7:45-12:40</td>
+                  <td>Німецька</td>
+                  <td>Французька</td>
+                  <td>Французька</td>
+                  <td>Матиматика</td>
+                  <td>Англійська</td>
+                  <td>Економіка</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+</body>
+</html>
